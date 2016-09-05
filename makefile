@@ -1,7 +1,7 @@
-empty:	main.o libs.a
+empty:	main.o libs
 	gcc -o start main.o -L.
 
-main.o:	main.c libs.a
+main.o:	main.c
 	gcc -c main.c
 	
 hello_world.o:	hello_world.c
